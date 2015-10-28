@@ -33,6 +33,7 @@ img {
 .hero {
   text-align: center;
   background-image: url('../images/hero_bg.png');
+  background-color: #E51635;
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
