@@ -1,0 +1,79 @@
+/* ----- Global ----- */
+
+* {
+  font-family: 'Gotham', 'Montserrat', sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.constrain-width {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clear {
+  clear: both;
+}
+
+/* ----- Nav ----- */
+
+.navbar {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.navbar-brand { height: 55px;  margin: 5px 10px !important;  }
+.navbar-brand img { height: 100%;}
+
+
+/* ----- Hero ----- */
+
+.hero {
+  text-align: center;
+  background-image: url('../images/hero_bg.png');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  color: #fff;
+  font-size: 3em;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px){
+  .hero .col {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .hero .col {
+    padding-bottom: 20px;
+  }
+}
+
+.hero .col-sm-3 img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.hero p {
+  padding: 1em;
+}
+
+.download-app-store{
+  max-width: 200px;
+}
+
+/* ----- Widgets ----- */
+.widgets {  text-align: center; }
+.widgets .img-wrap { height: 200px; }
+.widgets img { max-height: 200px; }
+.widgets strong { padding: 10px; display: inline-block; }
+@media screen and (min-width: 769px){
+  .widgets p { padding: 0 20px; }
+}
