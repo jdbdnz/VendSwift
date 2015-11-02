@@ -13,9 +13,18 @@ p.pad {
   padding: 5px 10px;
 }
 
+
 @media screen and (min-width: 769px){
   p.pad {
     padding: 20px 10px;
+  }
+
+  .map {
+    background-image: url('../images/map.jpg');
+    background-position: center right;
+    background-size: 50% auto;
+    background-repeat: no-repeat;
+    height: 100%;
   }
 }
 
@@ -159,6 +168,10 @@ a, a:hover {
 }
 .rewards_right {
   padding-top: 40px;
+}
+
+.rewards_left img {
+  max-height: 360px;
 }
 
 
