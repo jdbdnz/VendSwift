@@ -14,6 +14,12 @@ p.pad {
 }
 
 
+@media screen and (min-width: 1469px){
+  .map {
+    height: 420px;
+  }
+}
+
 @media screen and (min-width: 769px){
   p.pad {
     padding: 20px 10px;
@@ -22,7 +28,7 @@ p.pad {
   .map {
     background-image: url('../images/map.jpg');
     background-position: center right;
-    background-size: 50% auto;
+    background-size: auto 100%;
     background-repeat: no-repeat;
     height: 100%;
   }
@@ -41,18 +47,32 @@ a, a:hover {
   color: #000;
 }
 
-.btn-primary {
+.btn-footer {
   border: 2px #E51635 solid;
-  background-color: #fff;
+  background-color: transparent;
   color: #E51635;
 }
 
+.btn-footer:active,
+.btn-footer:hover, 
+.btn-footer:focus {
+  border: 2px #E51635 solid !important;
+  background-color: transparent !important;
+  color: #E51635 !important;
+}
 
-.btn-primary:hover, 
-.btn-primary:focus {
-  background-color: #E51635;
+.btn-hero {
+  border: 2px #fff solid;
+  background-color: transparent;
   color: #fff;
-  border-color: #E51635;
+}
+
+.btn-hero:active,
+.btn-hero:hover, 
+.btn-hero:focus {
+  border: 2px #fff solid !important;
+  background-color: transparent !important;
+  color: #fff !important;
 }
 
 /* ----- Nav ----- */
@@ -69,6 +89,7 @@ a, a:hover {
 /* ----- Hero ----- */
 
 .hero {
+  position: relative;;
   text-align: center;
   background-image: url('../images/hero_bg.png');
   background-color: #E51635;
@@ -81,10 +102,21 @@ a, a:hover {
   margin-bottom: 20px;
 }
 
+.hero .cta {
+  white-space: nowrap;
+}
+
 .hero .col-sm-3 img {
   width: 100%;
   max-width: 400px;
   margin: 0 auto;
+}
+
+.hero .btn {
+  background: transparent;
+  border-color: #fff;
+  color: #fff;
+  font-weight: 400;
 }
 
 .hero p {  padding: 0.5em; }
@@ -92,8 +124,12 @@ a, a:hover {
 .download-app-store {  max-width: 200px; padding-bottom: 1em; }
 
 @media screen and (min-width: 768px){
+  
+  .hero .cta {
+    padding: 2.7em 0 1.6em;
+  }
+
   .hero {
-    font-size: 3em;
     margin-bottom: 40px;
   }
 
@@ -102,10 +138,31 @@ a, a:hover {
     padding-bottom: 40px;
   }
 
-  .hero p {  padding: 1em; }
-  .download-app-store {  max-width: 200px; padding: 0; }
-
+  .download-app-store, .btn {  max-width: 200px; bottom: 1em; }
+  
 }
+
+
+@media screen and (min-width: 875px){
+  .hero .cta {
+    font-size: 1.2em;
+    padding: 3em 0 1.6em;
+  }
+}
+
+@media screen and (min-width: 1000px){
+  .hero .cta {
+    font-size: 1.35em;
+    padding: 3.3em 0 2em;
+  }
+}
+ 
+
+@media screen and (min-width: 1300px){
+  .hero .cta {
+    font-size: 1.55em;
+  }
+} 
 
 @media screen and (max-width: 768px){
   .hero .cta {
@@ -119,7 +176,7 @@ a, a:hover {
 
 
 /* ----- Widgets ----- */
-.widgets {  text-align: center; color: #E51635; }
+.widgets {  text-align: center; color: #E51635; padding: 30px 0 50px; }
 .widgets img { max-height: 200px; }
 .widgets .title { 
   padding: 10px; display: inline-block; 
@@ -141,7 +198,7 @@ a, a:hover {
 
 /* ----- Promotional ----- */
 .promotional {
-  padding: 200px 20px;
+  padding: 180px 20px;
   background-color: #C9C9C9;
   text-align: center;
 }
@@ -153,6 +210,7 @@ a, a:hover {
 }
 .locations_left {
   padding: 40px;
+  background: #fff;
 }
 
 
@@ -163,22 +221,52 @@ a, a:hover {
   background-color: #960D2E;
   color: #fff;
 }
-.rewards_left {
-  background-color: #960D2E;
-}
-.rewards_right {
-  padding-top: 40px;
+
+@media screen and (min-width: 920px){
+  .rewards_right {
+    padding-top: 35px;
+    padding-bottom: 35px
+  }
 }
 
-.rewards_left img {
-  max-height: 360px;
+
+@media screen and (min-width: 1270px){
+  .rewards_right {
+    padding-top: 80px;
+    padding-bottom: 80px
+  }
 }
 
+@media screen and (min-width: 1509px){
+  .rewards_right {
+    padding-top: 130px;
+    padding-bottom: 130px
+  }
+}
+
+.rewards {
+  background-image: url('../images/rewards_left.png');
+  background-position: 5% center;
+  background-size: 45% auto;
+  background-repeat: no-repeat;
+  height: 100%;
+}
 
 @media screen and (max-width: 769px){
   .rewards {
     background-color: #fff;
     color: #000;
+  }
+  .rewards_right {
+    margin-top: 300px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #fff;
+  }
+  .rewards {
+    background-color: #960D2E;
+    background-size: auto 300px;
+    background-position: top center;
   }
 }
 
@@ -202,6 +290,28 @@ a, a:hover {
 }
 
 @media screen and (max-width: 769px){
+  .footer {
+    background: #960D2E;
+  }
+
+  
+  .btn-footer {
+    border: 2px #fff solid;
+    background-color: transparent;
+    color: #fff;
+  }
+
+  .btn-footer:active,
+  .btn-footer:hover, 
+  .btn-footer:focus {
+    border: 2px #fff solid !important;
+    background-color: transparent !important;
+    color: #fff !important;
+  }
+
+  a {
+    color: #fff;
+  }
   
   .footer .col-xs-12 {
     padding: 20px;
