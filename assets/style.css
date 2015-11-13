@@ -298,6 +298,12 @@ a, a:hover {
   }
 }
 
+/* ---- terms ---- */
+
+.terms {
+  text-align: center;
+  padding-bottom: 200px;
+}
 
 /* ---- Footer ---- */
 .footer {
